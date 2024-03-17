@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+    body{
+    font-size: 15px;
+    }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    main{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 5%;
+      justify-content: center;
+      padding: 20px 10px;
+
+    }
+
+ img{
+width: 60px;
+display: block;
+margin-top: 10px;
+    }
+
+    section{
+     padding: 20px 50px;
+     line-height: 25px;
+      width: 300px;
+      height: 430px;
+      border: none;
+}
+
+
+section:nth-child(1){
+background-color: hsl(31, 77%, 52%);
+border-top-left-radius: 0.3rem;
+border-bottom-left-radius: 0.3rem;
+}
+
+section:nth-child(2){
+  background-color: hsl(184, 100%, 22%);
+}
+
+section:nth-child(3){
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 0.3rem;
+border-bottom-right-radius: 0.3rem;
+}
+p{
+
+  margin-top: 30px;
+  margin-bottom: 50px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+}
+
+h2{
+  color: hsl(0, 0%, 95%);
+  margin-top: 30px;
+  font-weight: 700;
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+button{
+  background-color: hsl(0, 0%, 95%);
+  border-radius:20px;
+  display: block;
+  border: none;
+  margin: auto;
+  
+  padding: 10px 20px;
+  font-weight: 400;
+  transition: color 0.4s ease, border 0.4s ease  ;
+  cursor: pointer;
+  }
+
+  button:hover{
+    background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+
+
+  }
+
+  .btn1{
+    color: hsl(31, 77%, 52%);
+    border: none;
+  }
+
+  .btn2{
+    color: hsl(184, 100%, 22%);
+    border: none;
+  }
+
+  .btn3{
+    color: hsl(179, 100%, 13%);
+    border: none;
+  }
+
+@media   (max-width: 470px) {
+  section:nth-child(1){
+background-color: hsl(31, 77%, 52%);
+border-bottom-left-radius: 0;
+border-top-left-radius: 0.5rem;
+border-top-right-radius: 0.5rem;
+
+}
+
+section:nth-child(3){
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 0;
+border-bottom-right-radius: 0.5rem;
+border-bottom-left-radius: 0.5rem;
+} 
+  
+}
+  </style>
+</head>
+<body>
+
+  <main>
+  <section>
+    <img src="images/icon-sedans.svg" alt="Sedan">
+    <h2>Sedans</h2>
+<p>
+  Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+  or on your next road trip.</p>
+  <button class="btn1">Learn More</button>
+  </section>
+
+
+
+  <section>
+    <img src="images/icon-suvs.svg" alt="SUVs">
+    <h2>SUVs</h2>
+    <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+      and off-road adventures.</p>
+      <button class="btn2">Learn More</button>
+  </section>
+  
+<section>
+  <img src="images/icon-luxury.svg" alt="Luxury">
+  <h2> Luxury</h2>
+  <p>
+    Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+    rental and arrive in style.
+    </p>
+    <button class="btn3">Learn More</button>
+</section>
+</main>
+
+</body>
+</html>
